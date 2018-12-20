@@ -3,4 +3,4 @@ creates a list of IP addresses to ping to generate an image on the IPv6 Christma
 
 usage:
 
-`python image2ipv6.py [filename] [x offset] [y offset]
+`python image2ipv6.py [filename] [x offset] [y offset]`
