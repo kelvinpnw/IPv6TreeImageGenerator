@@ -13,7 +13,7 @@ for line in fileinput.input(args.input_list):
         line = line[15:-1]
         x,y = map(lambda x: int(x,10),line.split(':')[0:2])
         r,g,b = map(lambda x: int(x,16),line.split(':')[2:])
-        print(x,y,r,g,b)
+        #print(x,y,r,g,b)
         if(x > 160 or y > 120 or r > 255 or g > 255 or b > 255):
                 skipped = True
                 continue
