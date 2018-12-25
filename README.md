@@ -6,4 +6,4 @@ requirements
 
 usage:
 
-`python image2ipv6.py [filename] [x offset] [y offset]`
+`python image2ipv6.py [filename] -X [x offset] -Y [y offset]`
