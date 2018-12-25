@@ -26,4 +26,3 @@ for y in range(img.height):
             b_hex='%02x' % b
             address = '2001:4c08:2028:'+str(x+args.XOffset)+':'+str(y+args.YOffset)+':'+r_hex+':'+g_hex+':'+b_hex;
             print(address)
-~                          
