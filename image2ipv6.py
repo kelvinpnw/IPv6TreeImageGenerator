@@ -11,9 +11,9 @@ args = parser.parse_args()
 
 img = Image.open(args.input_file)
 
-if img.height + args.YOffset > 120:
+if img.height + args.YOffset > 1920:
     warn('Image too tall')
-if img.width + args.XOffset > 160:
+if img.width + args.XOffset > 1080:
     warn('Image too wide')
 
 
@@ -24,5 +24,5 @@ for y in range(img.height):
             r_hex='%02x' % r
             g_hex='%02x' % g
             b_hex='%02x' % b
-            address = '2001:4c08:2028:'+str(x+args.XOffset)+':'+str(y+args.YOffset)+':'+r_hex+':'+g_hex+':'+b_hex;
+            address = '2a05:9b81:2021:'+str(x+args.XOffset)+':'+str(y+args.YOffset)+':'+r_hex+':'+g_hex+':'+b_hex;
             print(address)
